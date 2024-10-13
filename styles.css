@@ -377,3 +377,26 @@ footer {
 }
    
 }
+@media (max-width: 1024px) {
+    .intro {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+    }
+    
+    .intro .container {
+        max-width: 600px;
+    }
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+    }
+    
+    .contact .container {
+        max-width: 650px;
+       
+    }
+}
