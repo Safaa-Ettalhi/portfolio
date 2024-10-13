@@ -298,10 +298,17 @@ footer {
         display: flex;
     }
     /* Assurez-vous que le bouton burger soit à droite */
-    
     .intro {
-        flex-direction: column;
+        flex-direction: column; /* Empile les éléments */
         text-align: center;
+        align-items: center;
+        padding: 40px;
+    }
+    .intro img{
+        width: 100%;
+    }
+    .intro .container {
+        max-width: auto;
     }
 
     .social-icons {
@@ -323,6 +330,10 @@ footer {
     .contact {
         flex-direction: column;
     }
+.contact img{
+    width: 100%;
+}
+   
 }
 
 /* Tablettes */
