@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"> <img src="img/logo.jpg" alt="Logo Safaa Ettalhi" class="logo"></a>
+            <ul>
+                
+                <li><a href="#propos">À Propos</a></li>
+                <li><a href="#competence">Compétences</a></li>
+                <li><a href="#project">Projets</a></li>
+                <li><a href="#contacter">Contactez-moi</a></li>
+            </ul>
+            <button class="cv">  <a href="cv.pdf" class="cv" download>Télécharger CV</a></button>
+        </nav>
+    </header>
+
+    <section class="intro" id="propos">
+        <div class="container">
+            <h1>Bonjour, je suis <span class="highlight">Safaa Ettalhi</span>. <br> Développeuse full-stack <br> Basé en <span class="highlight">Maroc</span>.</h1>
+            <p>Je m'appelle Safaa Ettalhi, une développeuse full-stack spécialisé dans la création de sites modernes et responsifs utilisant les dernières technologies...</p>
+            <div class="social-icons">
+                <a href="https://github.com/Safaa-Ettalhi" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/safaa_ettalhi1/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <img src="img/hero.webp" alt="Illustration de développeur">
+    </section>
+
+    <section class="skills" id="competence">
+        <h2>Mes Compétences</h2>
+        <div class="skill-grid">
+            <div class="skill-item">Git</div>
+            <div class="skill-item">GitHub</div>
+            <div class="skill-item">Html</div>
+            <div class="skill-item">Css/Bootstrap</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">Jquey</div>
+            <div class="skill-item">React Js</div>
+            <div class="skill-item">Php</div>
+            <div class="skill-item">Laravel</div>
+            <div class="skill-item">Node Js</div>
+            <div class="skill-item">MySQL</div>
+            <div class="skill-item">MongoDB</div>
+        </div>
+    </section>
+
+    <section class="experience">
+        <h2>Mon Expérience</h2>
+        <div class="experience-grid">
+            <div class="experience-item">
+                <h3>Stage chez MediaVerse Sarl</h3>
+                <h4 class="date">Octobre 2023 - Janvier 2024</h4>
+                <p>En tant que stagiaire chez MediaVerse Sarl, je suis responsable de la mise à jour de leur plateforme...</p>
+            </div>
+            <div class="experience-item">
+                <h3>Stagiaire chez Centre Informatique Ville nouvelle</h3>
+                <h4 class="date">Avril 2023 - Mai 2023</h4>
+                <p>Chez Centre Informatique Ville nouvelle, j'ai travaillé sur le développement de plateformes d'inscription et la gestion des étudiants...</p>
+            </div>
+            
+        </div>
+    </section>
+    
+
+    <section class="projects" id="project">
+        <h2>Mes Projets</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <h3>Site Web de Portfolio</h3>
+                <p>Un portfolio personnel présentant mes compétences et projets en utilisant HTML, CSS .</p>
+            </div>
+            <div class="project-item">
+                <h3>Plateformes d'incription</h3>
+                <p>Une plateforme qui permet aux etudiant d'inscriver a une formation convenable et aux personnel de gestion des ses dernières .</p>
+            </div>
+            <div class="project-item">
+                <h3>Plateforme E-commerce Bio et bien etre </h3>
+                <p>Développement d'un site e-commerce complet avec filtrage des produits et fonctionnalité de panier d'achat.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contacter">
+        <h2>Me Contacter</h2>
+        <p>Si vous souhaitez me contacter, n'hésitez pas à le faire via les plateformes ou envoyez-moi un email directement.</p>
+        <div class="container">
+            <h3>Contactez-moi</h3>
+            <form action="#" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name"  required>
+    
+                <label for="email">E-mail :</label>
+                <input type="email" id="email"  required>
+    
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+   
+    <footer>
+        
+            
+                <p>&copy; 2024 Safaa Ettalhi. Tous droits réservés.</p>
+            
+    </footer>
+    
+
+</body>
+</html>
