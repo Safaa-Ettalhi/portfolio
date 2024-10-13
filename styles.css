@@ -253,19 +253,50 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+}
 /* Petits écrans (téléphones) */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
+    nav {
+        position: relative; /* Pour que le menu soit positionné correctement */
     }
-    
-    nav ul li {
-        margin-right: 0;
-        margin-bottom: 10px;
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%; /* Le menu prend toute la largeur de l'écran */
+        background-color: #333; /* Même couleur que le header */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
     }
 
+    /* Afficher le burger */
+    .burger {
+        display: block;
+        position: absolute;
+        right: 100px;
+        top: 32px;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    /* Afficher le menu quand il est ouvert */
+    nav ul.open {
+        display: flex;
+    }
+    /* Assurez-vous que le bouton burger soit à droite */
+    
     .intro {
         flex-direction: column;
         text-align: center;

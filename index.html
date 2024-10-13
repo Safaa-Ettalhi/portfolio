@@ -12,8 +12,10 @@
     <header>
         <nav>
             <a href="#"> <img src="img/logo.jpg" alt="Logo Safaa Ettalhi" class="logo"></a>
+            <button class="burger" id="burger">
+                ☰ <!-- Icône du menu burger -->
+            </button>
             <ul>
-                
                 <li><a href="#propos">À Propos</a></li>
                 <li><a href="#competence">Compétences</a></li>
                 <li><a href="#project">Projets</a></li>
@@ -118,6 +120,12 @@
                 <p>&copy; 2024 Safaa Ettalhi. Tous droits réservés.</p>
             
     </footer>
+    <script>
+        document.getElementById('burger').addEventListener('click', function() {
+            const navList = document.querySelector('nav ul');
+            navList.classList.toggle('open'); // Ajoute ou enlève la classe 'open' à la liste
+        });
+    </script>
     
 
 </body>
