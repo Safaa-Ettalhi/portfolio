@@ -117,6 +117,7 @@ button a {
     border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
+    cursor: pointer;
 }
 .skill-item:hover{
     background-color: #7f817f;
@@ -141,7 +142,7 @@ button a {
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 20px;
-    
+    cursor: pointer;
     border-radius: 5px; /* Arrondit les coins (optionnel) */
 }
 .experience-item:hover{
@@ -180,6 +181,7 @@ button a {
     padding: 20px;
     text-align: left;
     border-radius: 5px;
+    cursor: pointer;
 }
 .project-item:hover{
     background-color: #7f817f;
