@@ -65,6 +65,7 @@ button a {
 .intro {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 40px;
 }
 
@@ -237,12 +238,12 @@ button a {
 .contact {
     display: flex;
     justify-content: space-between;
-  
+    align-items: center;
     padding: 40px;
 }
 
 .contact .container {
-    max-width: 700px;
+    max-width: 650px;
    
 }
 
@@ -251,4 +252,57 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+/* Petits écrans (téléphones) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        padding-left: 0;
+    }
+
+    .skill-grid {
+        grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr; /* 1 colonne */
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr; /* 1 colonne */
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+}
+
+/* Tablettes */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .skill-grid {
+        grid-template-columns: 1fr 1fr 1fr; /* 3 colonnes */
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr; /* 1 colonne */
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    }
 }
